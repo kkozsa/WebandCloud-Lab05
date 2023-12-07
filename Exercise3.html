@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function multiplyNumbers(num1, num2) {
+            return num1 * num2;
+        }
+
+        function calculateProduct() {
+            var number1 = parseFloat(prompt('Enter number 1:'));
+            var number2 = parseFloat(prompt('Enter number 2:'));
+
+            
+                var product = multiplyNumbers(number1, number2);
+                document.getElementById('result').textContent = "The product of " + number1 + " and " + number2 + " is: " + product;
+          
+                
+           
+        }
+    </script>
+</head>
+<body>
+    <button type="button" onclick="calculateProduct()">Calculate product</button>
+    <div id="result"></div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+    <body>
+
+        <h3>Click the button to enter and display your name</h3>
+        <button onclick="showName()">Click to enter and show your name</button>
+
+        <script>
+
+            function showName()
+            {
+
+                var name = prompt("Enter your name:");
+                if (name !==null && name !== "")
+                {
+                    document.getElementById("demo").innerHTML = "Your name is: " + name;
+                }
+                else
+                {
+                    alert("Please enter your name!");
+                }
+
+
+            }
+
+        </script>
+
+        <p id="demo"></p>
+
+    </body>
+
+</html>

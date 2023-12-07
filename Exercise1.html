@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <script>
+
+        var startProgram = function()
+        {
+            var x = 55.5;
+            var y = 40.8;
+            var average = calAverage(x, y);
+            document.getElementById("paragraph1").innerHTML= "The average of " + x + " and " + y + " is " +average;
+        }
+
+        function calAverage(a, b)
+        {
+            return (a+b/2);
+        }
+
+    </script>
+    <head>
+
+        <body onload="startProgram();">
+            JavaScript calculator<br>
+                    
+            <p id="paragraph1">
+                This content will be replaced
+            </p>
+
+        </body>
+
+    </head>
+</html>

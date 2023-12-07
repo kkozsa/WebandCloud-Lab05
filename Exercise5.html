@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+
+    
+  </style>
+
+  <script>
+    function showMessage() {
+        document.getElementById("message").innerText = "You selected some text";
+    }
+  </script>
+</head>
+<body>
+    <h2>Some text</h2>
+    <input type="text" onselect="showMessage()" placeholder="Select this text">
+    <div id="message"></div>
+</body>
+</html>
